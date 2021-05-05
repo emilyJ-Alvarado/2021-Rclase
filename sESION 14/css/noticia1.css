@@ -1,0 +1,25 @@
+#cuerpo{
+    background-color: green;
+    text-align: justify;
+}
+#diario{
+    background-color: yellow;
+    float: right;
+}
+img{
+    float: right;
+}
+#Encabezado{
+    background-color: red;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+#Encabezado1{
+    background-color:gray;
+    color: white;
+    text-align:left;
+}
+h2{
+    color: red;
+}
