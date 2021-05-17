@@ -1,0 +1,61 @@
+#div1 img{
+    height: 200px;
+    width: 200px; 
+    float: left;
+}
+#div2{
+   border-style: solid;
+   border-color: red;
+   border-radius: 20px;
+  float: right;
+  padding:10px;
+  line-height: 10%;
+  height: 130px;
+    width: 190px; 
+    text-align: center;
+}
+#div1{
+
+    width: 800px; 
+    
+ }
+
+ hr {
+    height: 2px;
+    background-color: red;
+  }
+  #div3{
+    border-style: solid;
+    border-color: red;
+   line-height: 10%;
+   padding: 10px;
+width: 350px;
+border-radius: 20px;
+ }
+ #div4 img{
+    height: 100px;
+    width: 200px; 
+ }
+ #div4{
+    border-style: solid;
+    border-color: red;
+    width: 350px;
+    height: 107px;
+    padding: 10px;
+     position: relative;
+     top: -130px;
+     left: 420px;
+     border-radius: 20px;
+    justify-content: center;
+    display: flex;
+ }
+ #boleta{
+     position: relative;
+     top: -110px;
+ }
+ #pagar{
+     background-color: rgb(255, 172, 172);
+ }
+ table{
+    width: 800px;
+ }

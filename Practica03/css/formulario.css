@@ -1,0 +1,26 @@
+h2{
+    color: blue;
+    text-align: center;
+}
+img{
+    float: left;
+    height: 770px;
+    width: 500px;
+    border:solid blue;
+    border-radius: 5px;
+}
+form{
+    background-color: burlywood;
+    border-radius: 15px;
+    padding: 30px;
+}
+body{
+    padding: 90px;
+}
+legend{
+    font-family: fantasy;
+}
+fieldset{
+    border-color: blue;
+    border-radius: 5px;
+}
