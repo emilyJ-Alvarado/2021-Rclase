@@ -1,0 +1,281 @@
+.grid{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 180px 52px 1fr 200px ; 
+
+    grid-template-areas: "header header" "menu menu" "main main2" "main3 main3" "foot foot";
+}
+#img1{
+    width: 150px;
+    height: 150px;
+    float: left;
+    padding: 20px;
+
+}
+a{ 
+    height: 200px;
+    color: #000000; 
+} 
+h1{
+    margin-top: 50px;
+}
+.a{
+    grid-area: header;
+    background-color: teal;
+}
+
+#iniciarsesion{
+    padding-right: 20px;
+    padding-top: 20px;
+    position: relative;
+    float: right;
+}
+
+.menu{
+    grid-area: menu;
+    align-items: center;
+    background-color: #333;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+.c{
+    align-items: center;
+    grid-area: main2 ;
+    background-color:teal;
+}
+.c1{
+    background-color:gray;
+    width: 200px;
+    height: 140px;
+    margin-left: 40px;
+    margin-top: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.c2{
+    background-color: gray;
+    width: 200px;
+    height: 140px;
+    margin-left: 40px;
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.d{
+    grid-area: main3;
+    background-color: teal;
+}
+#img2{
+    width: 120px;
+    height: 120px;
+    float: left;
+    padding: 20px;
+    top: 30px;
+    left: 30px;
+    margin-top: 25px;
+}
+.d1{
+    padding: 20px;
+    float: left;
+    top: 30px;
+    left: 30px;
+
+}
+.d2{
+    padding: 20px;
+    float: left;
+    top: 30px;
+    left: 30px;
+
+}
+.d3{
+    padding: 20px;
+    float: left;
+    top: 30px;
+    left: 30px;
+
+}
+.d4{
+    padding: 20px;
+    float: left;
+    top: 30px;
+    left: 30px;
+
+}
+.e{
+    grid-area: foot;
+    background-color: #333;
+    text-align: center;
+    color:#fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav{
+    background-color: #333;
+}
+nav ul{
+    margin: 0px;
+}
+nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    } 
+nav li{
+    display:inline-block;
+    border:1px solid #000;
+    text-align:center;
+    color:#fff;
+}
+nav li:hover{
+    background-color: lightseagreen;
+    color:#000;
+}
+
+
+body {
+background-attachment: fixed;
+background-repeat: no-repeat;
+
+    font-family: 'Vibur', cursive;
+    font-family: 'Abel', sans-serif;
+opacity: .95;
+}
+
+form {
+    width: 450px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+}
+
+form .con {
+    display: -webkit-flex;
+    display: flex;
+  
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+      margin: 0 auto;
+}
+
+header {
+    margin: 2% auto 10% auto;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 250%;
+    font-family: 'Playfair Display', serif;
+    color: #3e403f;
+}
+header p {letter-spacing: 0.05em;}
+
+
+.input-item {
+    background: #fff;
+    color: #333;
+    padding: 14.5px 0px 15px 9px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+#eye {
+    background: #fff;
+    color: #333;
+  
+    margin: 5.9px 0 0 0;
+    margin-left: -20px;
+    padding: 15px 9px 19px 0px;
+    border-radius: 0px 5px 5px 0px;
+  
+    float: right;
+    position: relative;
+    right: 1%;
+    top: -.2%;
+    z-index: 5;
+    
+    cursor: pointer;
+}
+
+input[class="form-input"]{
+    width: 240px;
+    height: 50px;
+  
+    margin-top: 2%;
+    padding: 15px;
+    
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+  
+    outline: none;
+    border: none;
+  
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+    
+}
+input[id="txt-input"] {width: 240px;}
+input:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+}
+
+
+button {
+    display: inline-block;
+    color: #252537;
+  
+    width: 280px;
+    height: 50px;
+  
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 5px;
+    
+    outline: none;
+    border: none;
+  
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+
+.submits {
+    width: 48%;
+    display: inline-block;
+    margin-left: 2%;
+}
+
+.frgt-pass {background: transparent;position: relative;}
+.log-in {background: #B8F2E6;}
+.sign-up {background: #B8F2E6;}
+
+
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+

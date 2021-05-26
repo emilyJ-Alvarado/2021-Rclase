@@ -1,0 +1,83 @@
+div {
+    
+    border-radius: 5px; 
+}
+
+#principal{
+    background: black;
+}
+
+.izquierda {
+    float:left ;
+    background-color:darkcyan;
+    width: 20px;
+    height: 350px;
+    margin-top: 55px; 
+    margin-bottom: 10px;
+    border: 2px white; }
+
+.derecha {
+    float:right ;
+    background-color:rgb (240, 240, 240);
+    width: 78%;
+    height: 350px;
+    margin-top: 55px; 
+    margin-bottom: 10px;
+    border: 2px white; }
+    
+
+
+#email {
+    float: right; 
+    background: white;
+    margin: 10px; }
+
+#email hover {
+    font-weight: bold; 
+    color:gray; }
+
+#name {
+    float: left; 
+    font-weight:bold; 
+    background: rgb (230, 230, 230); 
+    font-size: 1.5em; 
+    margin: 22px 10px 10px 10px; }
+
+#name hover {
+    color: white;
+ }
+
+.content {
+    margin: 10px; 
+}
+
+h4 {
+    background: teal; 
+}
+
+#direccion {
+    text-align:center; 
+    background: teal; 
+}
+
+span hover {
+    color: gray; 
+    font-weight:bold; 
+}
+
+
+ol {
+    list-style:none;
+    margin: 20px 0 0 -20px; 
+    font-size: 1em;
+ }
+
+a {
+   text-decoration: none;
+}
+
+
+#margin-top {
+   margin-top: 12px; 
+}
+

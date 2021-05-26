@@ -1,0 +1,10 @@
+.bloque{
+    background-color: burlywood;
+    width: 200px;
+    height: 110px;
+    padding: 5px;
+}
+
+ li{
+    list-style: none;
+ }

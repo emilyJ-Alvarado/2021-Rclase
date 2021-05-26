@@ -1,0 +1,102 @@
+.grid {
+    margin: 0px auto;
+    max-width: 1000px;
+    min-height: 100vh;
+    display: grid;
+grid-template-columns: 100%;
+grid-template-rows: 100px 50px 1fr 100px 50px;
+    grid-template-areas: "my-header" "my-nav" "my-section" "my-aside" "my-footer";
+}
+body {
+   background-image: url(https://media.istockphoto.com/vectors/paw-footprints-dog-and-bones-on-a-white-background-vector-vector-id1211990917);
+}
+header img{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: -150px;
+    left: 700px;
+    
+}
+header h1{
+    font-family: fantasy;
+    font-size:50px;
+   
+}
+header h2{
+    font-family:monospace;
+    color: red;
+    font-size:30px;
+}
+
+header {
+    grid-area: my-header;
+    background-color: white;
+    line-height : 55px;
+}
+
+nav {
+    grid-area: my-nav;
+    background-color: gray;
+}
+
+section {
+    grid-area: my-section;
+    background-color:lightpink;
+    border: solid rgb(85, 1, 85) 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+aside {
+    grid-area: my-aside;
+    background-color: darkmagenta;
+}
+
+footer {
+    grid-area: my-footer;
+    background-color: darkorchid;
+    text-align: center;
+}
+nav li{
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;
+    padding: 20px;
+ }
+ nav li:hover{
+    background-color: #555;
+    color: silver;
+ }
+ footer, nav, aside{
+     color: white;
+ }
+ section img{
+    height: 50px;
+    width: 50px; 
+    float: left;
+    padding: 10px;
+ }
+@media(min-width: 600px) and (max-width:1000px){
+    .grid{
+        grid-template-columns: 30% 70%;
+grid-template-rows: 150px 50px 1fr 100px ;
+    grid-template-areas: "my-header my-header" "my-nav my-nav" " my-aside my-section " "my-footer my-footer";
+    
+    }
+   
+     
+}
+
+@media(min-width: 1001px) {
+    .grid{
+        grid-template-columns: 200px 1fr 200px;
+grid-template-rows: 200px  1fr 100px ;
+    grid-template-areas: "my-header my-header my-header" "my-nav my-section my-aside" "my-footer my-footer my-footer";
+    }
+    nav li{
+        display: block;
+        padding: 8px 0 8px 16px;
+        text-decoration: none;
+     }
+}

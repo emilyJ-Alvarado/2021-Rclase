@@ -1,119 +1,148 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
     <link rel="stylesheet" href="css/contactos.css">
-    <title>Web Personal</title>
-    <link rel="icon" href="img/favicon.ico">
-    <script src="https://kit.fontawesome.com/975123f3da.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <main class="grid">
-        <header>
-            <h5><a href="registro.html">Iniciar sesión</a></h5>
-            <img src="img/emi.jpg" alt="emi">
-            <h1>EMILY JHASMIN ALVARADO ALVA</h1>
-            <h4>Mi web Personal</h4>
-     
-        </header>
-        <NAV>
+    <div class="grid">
+        <div class="a">
+            <div id="iniciarsesion"><a href="iniciodesesion.html">Iniciar sesión</a></div>
+            <img id="img1" src="img/pp.jpg">
+            <h1>Myrella Stefany Valdera Sandoval</h1>
+            <h2>Mi web Personal</h2>
+        </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="curriculum.html">Curriculum</a></li>
+                    <li><a href="Proyectos.html">Proyectos</a></li>
+                    <li><a href="Contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+    <div class="contact_form">
+
+        <div class="formulario">      
+          <h1>Para Comunicarse Conmigo</h1>
+            <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+    
+    
+              <form action="submeter-formulario.php" method="post">       
+    
+                
+                    <p>
+                      <label for="nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                    </p>
+                  
+                    <p>
+                      <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                    </p>
+                
+                    <p>
+                      <label for="telefone" class="colocar_telefono">Teléfono
+                      </label>
+                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    </p>    
+                  
+                    <p>
+                      <label for="website" class="colocar_website">Sitio web
+                      </label>
+                        <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                    </p>    
+                  
+                    <p>
+                      <label for="asunto" class="colocar_asunto">Asunto
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                    </p>    
+                  
+                    <p>
+                      <label for="mensaje" class="colocar_mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                      </label>                     
+                                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                    </p>                    
+                  
+                    <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+    
+                    <p class="aviso">
+                      <span class="obligatorio"> * </span>los campos son obligatorios.
+                    </p>          
+                
+              </form>
+        </div>  
+      </div>
+      <div class="c">
+        <div class="c1">
+            <h3>Menú</h3>
             <ul>
-           <li><a href="index.html">Inicio </a> </li>
-           <li> <a href="CV1.html"> Curriculum</a> </li>
-           <li> <a href="proyectos.html"> Proyectos </a> </li>
-           <li> <a href="contactos.html" class="active"> Contactos</a> </li>
-        </ul>
-        </NAV>
-        <SECtion>
-           <h3>PARA COMUNICARSE CONMIGO</h3> 
-           <div >
-            <form action="data.php">
-                <label for="nombre">Nombre</label><br> <br>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre"> <br> <br>
-                <label for="nombre">Email</label><br> <br>
-                <input type="text" name="correo" id="correo" placeholder="micorreo@dominio"><br> <br>
-                <label for="nombre">Mensaje</label><br> <br>
-                <textarea name="introducir_mensaje"  id="mensaje" placeholder="Deja aquí tu comentario..." cols="30" rows="3"></textarea><br><br>
-                <input id="Limpiar" type="reset" value="Limpiar"> <input id="Enviar" type="submit" value="Enviar">
-            </form></div>
-            <div id="d2">
-                <p>Celular:  942338203</p>
-                <p>Email:<a id="mail" href="mailto:">emilyjhas@gmail.com</a></p>
-                <p>Social: <a href="https://www.linkedin.com/in/emily-jhasmin-alvarado-alva-93721820a//" target="_blank" ><i class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com/emilyjhas?fbclid=IwAR2oADBfZBQZ8T4lw6AOCizjp7Ac3pTg512hcWmF1sElBhLYRmd
-                    bHxacLz8" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
-                    <a href="https://github.com/emilyJ-Alvarado" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-                <a href="https://web.facebook.com/emilyjhasmin.alvaradoalva.58/" target="_blank"><i class="fab fa-facebook-square"></i></a></p>
-            <img src="img/operadora.png" alt="operadora">
-            </div>
-        </SECtion>
-        <aside>
-            <div>
-                <h4>Menú</h4>
-                <ul>
-                    <li><a href="index.html">Inicio </a> </li>
-           <li> <a href="CV1.html"> Curriculum</a> </li>
-           <li> <a href="proyectos.html"> Proyectos </a> </li>
-           <li> <a href="contactos.html"> Contactos</a> </li>
-                </ul>
-            </div>
-            <div>
-                <h4>Enlaces de interés</h4>
-                <ul>
-                    <li> <a href="http://www.aera.net">AERA</a> </li>
-                    <li><a href="http://www.mecd.gob.es">MECD</a> </li>
-                    <li> <a href="http://www.echer.org"> ECHER</a></li>
-                    <li><a href="http://www.ifut.ie"> IFUT</a></li>
-                </ul>
-            </div>
-            
-        </aside>
-        <footer>
-            <img src="img/emi.jpg" alt="emi">
-            <div id="contactos">
-                <div>
-                    <h4>Información de contacto</h4>
-                    <ul>
-                        <li><b>Celular: </b> 942338203</li>
-                        <li><b>Email: </b><a id="mail" href="mailto:">emilyjhas@gmail.com</a></li>
-                                                
-                    </ul>
-                </div>
-                <div>
-                    <h4>Síguenos en</h4>
-                    <ul>
-                        <li> <a href="https://web.facebook.com/emilyjhasmin.alvaradoalva.58/" target="_blank">Facebook</a> </li>
-                        <li><a href="https://www.linkedin.com/in/emily-jhasmin-alvarado-alva-93721820a//" target="_blank" > Linkedin</a></li>
-                          <li><a href="https://twitter.com/emilyjhas?fbclid=IwAR2oADBfZBQZ8T4lw6AOCizjp7Ac3pTg512hcWmF1sElBhLYRmd
-                            bHxacLz8" target="_blank">Twitter</i></a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Enlaces de interés</h4>
-                    <ul>
-                        <li> <a href="http://www.aera.net">AERA</a> </li>
-                    <li><a href="http://www.mecd.gob.es">MECD</a> </li>
-                    <li> <a href="http://www.echer.org"> ECHER</a></li>
-                    <li><a href="http://www.ifut.ie"> IFUT</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Menú</h4>
-                    <ul>
-                        <li><a href="index.html">Inicio </a> </li>
-               <li> <a href="CV1.html"> Curriculum</a> </li>
-               <li> <a href="proyectos.html"> Proyectos </a> </li>
-               <li> <a href="contactos.html"> Contactos</a> </li>
-                    </ul>
-                </div>
-            </div>
-            
-            </footer>
-            <div class="fin">
-                <b> Webmaster: Emily Jhasmin Alvarado Alva</b> 
-             </div>
-    </main>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="curriculum.html">Curriculum</a></li>
+            <li><a href="proyecto.html">Proyectos</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </div>
+        <br>
+        <div class="c2">
+            <h3>Enlaces de interés</h3>
+            <ul>
+                <li><a href="#item01">AERA</a></li>
+                <li><a href="#item02">MECD</a></li>
+                <li><a href="#item03">ECHER</a></li>
+                <li><a href="#item04">IPUT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="d">
+        <img id="img2" src="img/pp.jpg"> 
+        <div class="d1">
+            <h3>Información de contacto</h3>
+            <ul>
+            <li><a href="#item01">Celular:929276267</a></li>
+            <li><a href="#item02">Gmail:mvalderasandoval12@gmail.com</a></li>
+            <li><a href="#item03">Hotmail: mirellavaldera2019@hotmail.com</a></li>
+            <li><a href="#item04">Direcciòn: Calle Convento/ Tùcume</a></li>
+            </ul>
+        </div> 
+        <div class="d2">
+            <h3>Síguenos en</h3>
+            <ul>
+            <li><a href="#item01">Facebook</a></li>
+            <li><a href="#item02">Instagram</a></li>
+            <li><a href="#item03">Twuiter</a></li>
+            <li><a href="#item04">Linkendi</a></li>
+            </ul>
+        </div>
+        <div class="d3">
+            <h3>Enlaces de interés</h3>
+            <ul>
+            <li><a href="#item01">AERA</a></li>
+            <li><a href="#item02">MECD</a></li>
+            <li><a href="#item03">ECHER</a></li>
+            <li><a href="#item04">IPUT</a></li>
+            </ul>
+        </div>
+        <div class="d4">
+            <h3>Menú</h3>
+            <ul>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="curriculum.html">Curriculum</a></li>
+            <li><a href="proyecto.html">Proyectos</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </div>    
+    </div>
+    <div class="e">Webmaster: Myrella Stefany Valdera Sandoval</div>
+</div>
 </body>
 </html>
