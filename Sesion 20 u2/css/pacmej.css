@@ -1,0 +1,52 @@
+div{
+    background-color: #8e44ad;
+    color: white;
+    padding: .2rem .3rem 1rem .3rem;
+    position: absolute;
+    border-radius: 2rem 2rem 0 0;
+    animation-name: animar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+body{
+   background-image: url(../img/0f445c2bbba8047c522392c24330347b.png);
+   background-repeat: no-repeat;
+   background-size: 400px;
+}
+
+@keyframes animar {
+    0%, 100%{
+        left: 0;
+        top: 0;
+    }
+    10%, 95%{
+        left: 5.5rem;
+        top: 0rem;
+        color: #9b59b6;
+    }
+    20%, 90%{
+        left: 5.5rem;
+        top: 3.5rem;
+        color: white;
+    }
+    30%,85%{
+        left: 8rem;
+        top: 3.5rem;
+        color: white; 
+    }
+    40%, 80%{
+        left: 8rem;
+        top: 6rem;
+        color: #9b59b6;
+    }
+    50%, 70%{
+        left: 11rem;
+        top: 6rem;
+        color: #9b59b6;
+    }
+    60%{
+        left: 11rem;
+        top: 12rem;
+        color: #9b59b6;
+    }
+}
