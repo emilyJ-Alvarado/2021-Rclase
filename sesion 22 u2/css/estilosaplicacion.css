@@ -2,9 +2,9 @@ html, body{
     height: 100%;
 }
 #cover{
-    background: #222 url(../img/perro-3-e1561679226953.jpg) center no-repeat;
+    background: #222 url(../img/dog-2785074_1920.jpg) center no-repeat;
     background-size: 100%;
-    color: white;
+    color: whitesmoke;
     height: 100%;
     text-align: center;
 display: flex;
