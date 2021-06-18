@@ -169,4 +169,7 @@
         transform: translate(-50%, -30%) rotate(-45deg) scale(3);
     }
 }
-
+.tex{
+    color: black;
+    position: absolute;
+}

@@ -1,0 +1,206 @@
+
+
+.corazon{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -30%) rotate(-45deg);
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+.banda{
+    position: absolute;
+    width: 170%;
+    height: 15%;
+    background-color: white;
+    top: 35%;
+    left: -10px;
+    z-index: 1;
+}
+
+.corazon::before,
+.corazon::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: red;
+}
+.corazon::before{
+    left: 50%;
+}
+.corazon::after{
+    top: -50%;
+}
+
+
+
+
+/* animacion*/
+
+.corazon:hover {
+    animation: latir 15s cubic-bezier(.32, 2, .59, 2) infinite;
+}
+
+@keyframes latir {
+    3% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.1);
+    }
+    8% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.2);
+    }
+    13% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.3);
+    }
+    18% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.4);
+    }
+    23% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.5);
+    }
+    28% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.6);
+    }
+    33% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.7);
+    }
+    38% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.8);
+    }
+    
+}
+
+
+.tex{
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+    text-align: center;
+    padding: 30px;
+    
+}
+@keyframes slidein {
+    0%{
+        margin-left: 100%;
+        width: 300%;
+    }
+    10%{
+        background-color: red;
+    }
+    20%{
+        background-color: rgb(255, 117, 117);
+    }
+    30%{
+        background-color: rgb(255, 203, 203);
+    }
+    40%{
+        background-color: rgb(253, 253, 253);
+    }
+    50%{
+        background-color: rgb(253, 253, 253);
+    }
+    60%{
+        background-color:  rgb(255, 203, 203);
+    }
+    70%{
+        background-color: rgb(255, 117, 117);
+    }
+    80%{
+        background-color: red;
+    }
+    90%{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+body{
+    overflow: hidden;
+}
+
+.leaf{
+    position:absolute ;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.leaf div{
+position:absolute ;
+display:block ;
+}
+.leaf div:nth-child(1){
+    left:20%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-2s;
+
+}
+.leaf div:nth-child(2){
+    left:70%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+.leaf div:nth-child(3){
+    left:10%; 
+    animation:fall 20s linear infinite ;
+    animation-delay:-7s;
+    
+}
+.leaf div:nth-child(4){
+    left:50%; 
+   animation:fall 18s linear infinite ; 
+   animation-delay:-5s;
+}
+.leaf div:nth-child(5){
+    left:85%; 
+    animation:fall 14s linear infinite ;
+    animation-delay:-5s;
+}
+.leaf div:nth-child(6){
+    left:15%; 
+    animation:fall 16s linear infinite ;
+    animation-delay:-10s;
+}
+.leaf div:nth-child(7){
+    left:90%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+
+@keyframes fall{
+    0%{
+        opacity:1;
+        top:-10%;
+        transform:translateX (20px) rotate(0deg);
+    }
+    20%{
+        opacity:0.8;
+        transform:translateX (-20px) rotate(45deg);
+    }
+    40%{
+
+        transform:translateX (-20px) rotate(90deg);
+    }
+    60%{
+        
+       transform:translateX (-20px) rotate(135deg); 
+    }
+    80%{
+    
+        transform:translateX (-20px) rotate(180deg);
+    }
+    100%{
+        
+        top:110%;
+        transform:translateX (-20px) rotate(225deg);
+    }
+    }
+.leaf1{
+    transform: rotateX(180deg);
+}
+p{
+    font-style: italic;
+    font-weight: bolder;
+}

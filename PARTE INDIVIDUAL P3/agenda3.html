@@ -5,28 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda 3</title>
+    <script src="https://kit.fontawesome.com/975123f3da.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/ag3.css">
 </head>
 <body>
     <div id="contenedor">
         <header>
-            <h3>Mi Agenda de contactos</h3>
+            <img src="img/410909.png" alt="">
+            <h3>MI AGENDA DE CONTACTOS</h3>
             <hr>
         </header>
 <form>
-    <span>Nombre: </span>
+    
+    <span><i class="fas fa-user-friends"> &nbsp</i>Nombre: </span>
     <input type="text" placeholder="Nombre" id="nombre"> <br><br>
-    <span>Num Celular: </span>
+    <span> <i class="fas fa-phone">&nbsp</i> N° Celular: </span>
     <input type="text" placeholder="movil" id="movil"><br><br>
-    <span>email: </span>
+    <span><i class="fas fa-envelope">&nbsp</i>E-mail: </span>
     <input type="email" placeholder="email" id="email">
 </form>
 <hr/>
 <div>
-    <button type="button" onclick="guardarDatos()">Guardar</button>
-    <button type="button" onclick="recuperarDatos()">Recuperar</button>
-    <button type="button" onclick="eliminarDato()">Eliminar</button>
-    <button type="button" onclick="eliminarTodo()">Eliminar Todos</button>
+    <button type="button" onclick="guardarDatos()" id="guardar">Guardar</button>
+    <button type="button" onclick="recuperarDatos()" id="recu">Recuperar</button>
+    <button type="button" onclick="eliminarDato()"id="eliminar">Eliminar</button>
+    <button type="button" onclick="eliminarTodo()" id="elit">Eliminar Todos</button>
 </div>
 <hr>
 <span class="titu">Nombre</span> <span class="titu">Celular</span><span class="titu">email</span><br>
