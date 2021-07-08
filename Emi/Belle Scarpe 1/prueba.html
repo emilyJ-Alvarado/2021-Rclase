@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title>
+    <style type="text/css">
+      html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=API_KEY">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: { lat: -34.397, lng: 150.644},
+          zoom: 8
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+<body>
+    <form method="post" action="WebForm1.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="hi2L1ymHDf4m8B8t0C7bGUHkzJoVY/TtxD8fMRwrGdRBRFyxRBkyp57WUnHCMItu0mDNlYrYGkHtWKhgOW3lB5fBBg4iLd5t9cqMKP5h3yg=" />
+</div>
+
+    <div id="map-canvas">
+    </div>
+
+<div class="aspNetHidden">
+
+    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C687F31A" />
+</div></form>
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Chrome","requestId":"dd8420e975b84211bfc48926bc521058"}
+</script>
+<script type="text/javascript" src="http://localhost:57972/92ec7b1e9f6b45d880f3def8ac954bae/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+</body>
+</html>

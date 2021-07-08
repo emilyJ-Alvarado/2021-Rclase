@@ -1,0 +1,140 @@
+body{
+    background-color: #EEEEEE;
+}
+#pago{
+    text-align: center;
+    color: green;
+    font-size: 20px;
+}
+#factura{
+    width: 300px;
+    height:400px;
+    float: left;
+}
+#blanco{
+    background-color: white;
+    text-align: center;
+}
+#contenido{
+    text-align: center;
+}
+#gracias{
+    padding: 50px;
+}
+#formul{
+    padding-left: 100px;
+}
+
+#metodo{
+    text-align: center;
+    color: #00ADB5;
+    font-weight: bolder;
+}
+
+.container .row{
+    background-color: #EEEEEE;
+    padding-left: 0;
+}
+
+.col{
+    border: solid; 
+    background-color: rgb(211, 211, 211);
+    padding-left: 0;
+   
+}
+
+#house{
+     margin-left: 40%;
+    
+   
+}
+#bel{
+     margin-left: -400%;   
+}
+#buscar{
+  margin-left: -50%;
+}
+#questions{
+    float: right;
+    color: #00ADB5;
+
+}
+#inconosH{
+    margin-right:10%;
+    margin-top: 1%;
+}
+#vendido{
+    margin-left: 5%;
+
+}
+
+.me-2{
+    margin-left:150%;
+    margin-top:-3rem;
+    width: 300%;
+    border-radius: 60px;
+   
+}
+.w-0{
+    width: 160px;
+    height: 120px;
+}
+
+#btn{
+    margin-left: 40%;
+}
+
+#menu{
+    background-color: white;
+    margin: 1px;
+    border-radius: 10px;
+    width: 290px;
+    border: black solid;
+    }
+#menuT{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+#contbtn{
+    background-color: #00ADB5;
+    width: auto;
+    height: 60px;
+   
+}
+#tend{
+    margin: auto;
+    padding: auto;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#h3{
+    width: 100px; 
+    height: 82px;
+    float: left;
+}
+#h1, #h2{
+    float: right;
+    width: 55px; 
+    height: 55px;
+    padding: 5PX;
+    margin-right: 20px;
+}
+#datos{
+    margin-left: 20%;
+    
+}
+.datos{
+    margin-left: 3% ;
+}
+.color-b{
+    background-color: #00ADB5 !important
+}
+.ten{
+    width: 30%;
+}

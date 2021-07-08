@@ -1,0 +1,35 @@
+#com{
+    text-align: center;
+}
+#coment{
+   
+text-align: center;
+
+}
+#fav{
+    width: 100px;
+    height: 80px;
+    float: left;
+}
+#im{
+    width: 60px;
+    height: 60px;
+}
+body{
+    background-color: #EEEEEE;
+}
+#fa{
+    font-weight: bolder;
+}
+#del{
+    width: 20px;
+    height: 20px;
+    float: right;  
+}
+#car{
+    width: 20px;
+    height: 20px; 
+}
+#tex{
+    text-align: right;
+}

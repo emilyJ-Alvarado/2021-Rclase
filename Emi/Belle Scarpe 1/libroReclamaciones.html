@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/libroReclamaciones.css">
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/975123f3da.js" crossorigin="anonymous"></script>
+    <title>Libro Reclamaciones</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <a id="questions" href="#">Ayuda | Preguntas frecuentes</a>
+            </div>
+            <div class="col-md-12 ">
+
+                <head>
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container-fluid text-center">
+                            <a class="navbar-brand" href="#">
+                                <div class="mb-5">
+                                    <img id="bel" src="img/logo.png" alt="" width="130" height="70">
+                                    <a class="btn btn-outline-dark btn-floating m-1" href="Index.html" role="button"
+                                        style="border-color:whitesmoke"><i class="fas fa-home"></i></a>
+                                    <input id="buscar" class="form-control me-2" type="search"
+                                        placeholder="Búsqueda de artículos" aria-label="Search">
+                                </div>
+
+                                <div id="inconosH" class="mb-5">
+                                    <!-- User -->
+                                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+                                        style="border-color:whitesmoke"><i class="fas fa-user"></i></a>
+
+                                    <!-- Heart -->
+                                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+                                        style="border-color:whitesmoke"><i class="fas fa-heart"></i></a>
+
+                                    <!-- Shopping-cart -->
+                                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+                                        style="border-color:whitesmoke"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </a>
+                        </div>
+                    </nav>
+                </head>
+            </div>
+
+
+            <div class="row my-3">
+                <div class="col-9">
+                    <section class="col-md-6 col-sm-8">
+                        <h4>Datos de la persona que presenta el reclamo</h4>
+                        <br>
+                        <div>
+
+                            <select class="form-control" name="selectColor">
+                                <option value="">Tipo de documento:</option>
+                                <option value=1>DNI</option>
+                                <option value=1>Pasaporte</option>
+                                <option value=1>Carnet de extranjería</option>
+
+                            </select>
+                        </div>
+                        <br>
+                        <div class="mb-3">
+                            <label for="exampleDropdownForm" class="form-label">Nro de Documento:</label>
+                            <input type="NumDoc" class="form-control" id="exampleDropdownForm" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleDropdownForm" class="form-label">Nombres:</label>
+                            <input type="Nombre" class="form-control" id="exampleDropdownForm" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleDropdownForm" class="form-label">Apellido Paterno:</label>
+                            <input type="ApellidoP" class="form-control" id="exampleDropdownForm" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleDropdownForm" class="form-label">Apellido Materno:</label>
+                            <input type="ApellidoM" class="form-control" id="exampleDropdownForm" placeholder="">
+                        </div>
+                        <div>
+
+                            <select class="form-control" name="selectColor">
+                                <option value="">Tipo de respuesta:</option>
+                                <option value=1>correo electronico</option>
+                                <option value=1>Mensaje</option>
+                                <option value=1>Llamada</option>
+
+                            </select>
+                        </div>
+                        <br>
+                        <div class="mb-3">
+                            <label for="exampleDropdownForm" class="form-label">Dirección:</label>
+                            <input type="Dirección" class="form-control" id="exampleDropdownForm" placeholder="">
+                        </div>
+                        <div>
+
+                            <select class="form-control" name="selectColor">
+                                <option value="">Departamento:</option>
+                                <option value=1>----</option>
+                                <option value=1>----</option>
+                                <option value=1>----</option>
+
+                            </select>
+                            <br>
+                            <select class="form-control" name="selectColor">
+                                <option value="">Provincia:</option>
+                                <option value=1>----</option>
+                                <option value=1>----</option>
+                                <option value=1>----</option>
+
+                            </select>
+                            <br>
+                            <select class="form-control" name="selectColor">
+                                <option value="">Distrito:</option>
+                                <option value=1>----</option>
+                                <option value=1>----</option>
+                                <option value=1>----</option>
+
+                            </select>
+                        </div>
+                        <br>
+                        <div class="mb-3">
+                            <label for="exampleDropdownForm" class="form-label">Teléfono:</label>
+                            <input type="Telefono" class="form-control" id="exampleDropdownForm" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleDropdownForm" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="exampleDropdownForm" placeholder="">
+                        </div>
+
+                        <h4>Detalle de su reclamo:</h4>
+                        <label for="exampleDropdownForm" class="form-label">Tipo:</label>
+                        <div class="tipo">
+
+                            <div class="radio"><input type="radio" id="reclamo" name="tipo" value="R" required
+                                    autocomplete>Reclamo</div>
+                            <div class="radio"><input type="radio" id="queja" name="tipo" value="Q" required>Queja
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleDropdownFormMensaje" class="form-label">Detalle de reclamo:</label> <br>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleDropdownFormMensaje" class="form-label">Pedido:</label> <br>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+
+                        <h4>Datos del apoderado:</h4>
+                        <br>
+                        <div>
+
+                            <select class="form-control" name="selectColor">
+                                <option value="">Tipo de documento:</option>
+                                <option value=1>DNI</option>
+                                <option value=1>Pasaporte</option>
+                                <option value=1>Carnet de extranjería</option>
+
+                            </select>
+                        </div>
+                        <br>
+                        <div class="mb-3">
+                            <label for="exampleDropdownForm" class="form-label">Nro de Documento:</label>
+                            <input type="NumDoc" class="form-control" id="exampleDropdownForm" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleDropdownForm" class="form-label">Nombres:</label>
+                            <input type="Nombre" class="form-control" id="exampleDropdownForm" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleDropdownForm" class="form-label">Apellido Paterno:</label>
+                            <input type="ApellidoP" class="form-control" id="exampleDropdownForm" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleDropdownForm" class="form-label">Apellido Materno:</label>
+                            <input type="ApellidoM" class="form-control" id="exampleDropdownForm" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleDropdownForm" class="form-label">Teléfono:</label>
+                            <input type="Telefono" class="form-control" id="exampleDropdownForm" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleDropdownForm" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="exampleDropdownForm" placeholder="">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                            <label class="form-check-label" for="dropdownCheck">
+                                Al enviar este formulario acepto el flujo transfronterizo de mis datos personales, según la Ley de Protección de Datos Personales.
+                            </label>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Enviar</button>
+
+
+                    </section>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <br>
+    <br>
+    <br>
+    <!-- <div class="row"> -->
+    <div id="log" class="row text-center mx-5">
+
+        <div class="col-3">
+            <!-- ENTREGA A DOMICILIO -->
+            <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button" style="border-color: white;"><i
+                    class="fas fa-truck"></i>
+                <p>ENTREGA A DOMICILIO</p>
+            </a>
+        </div>
+        <div class="col-3">
+            <!-- RECOGO EN TIENDA -->
+            <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button" style="border-color: white;"><i
+                    class="fas fa-street-view"></i>
+                <p>RECOGO EN TIENDA</p>
+            </a>
+        </div>
+        <div class="col-3">
+            <!-- PAGOS SEGURO -->
+            <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button" style="border-color: white;"><i
+                    class="fas fa-credit-card"></i>
+                <p>PAGOS SEGURO</p>
+            </a>
+        </div>
+        <div class="col-3">
+            <!-- ASISTENCIA POR WHATSAPP -->
+            <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button" style="border-color: white;"><i
+                    class="fab fa-whatsapp"></i>
+                <p>ASISTENCIA POR WHATSAPP</p>
+            </a>
+        </div>
+    </div>
+    <!-- </div> -->
+
+
+
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-md-12">
+            <!-- Footer -->
+            <footer class="bg-dark text-center text-white color-b">
+                <!-- Section: Links  -->
+                <section class="">
+                    <div class="bg-dark text-center text-white color-b">
+                        <!-- Grid row -->
+                        <div class="row mt-3">
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                <!-- Content -->
+                                <br>
+                                <h6 class="text-uppercase fw-bold mb-4" style="color: black;">
+                                    <b>¡Síguenos!</b>
+                                </h6>
+                                <section class="mb-4">
+                                    <!-- Facebook -->
+                                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                                            class="fab fa-facebook-f"></i></a>
+
+                                    <!-- Instagram -->
+                                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                                            class="fab fa-instagram"></i></a>
+
+                                    <!-- Twitter -->
+                                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                                            class="fab fa-twitter"></i></a>
+                                </section>
+
+                                <a href="#" class="btn btn-outline-dark" style="background-color: white;"><b>Factura
+                                        Electrónica</b></a>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                <!-- Links -->
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                </br>
+                                </br>
+                                <a href="#" class="btn btn-outline-dark" style="background-color: white;"><b>Libro de
+                                        Reclamaciones</b></a>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                                <!-- Links -->
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                </br>
+                                </br>
+                                <a href="TerminosyCondiciones1.html" class="btn btn-outline-dark"
+                                    style="background-color: white;"><b>Términos y
+                                        condiciones</b></a>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                <!-- Content -->
+                                <br>
+                                <h6 class="text-uppercase fw-bold mb-4" style="color: black;">
+                                    <b>Métodos de pago</b>
+                                </h6>
+                                <section class="mb-4">
+                                    <!-- Visa -->
+                                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                                            class="fab fa-cc-visa"></i></a>
+
+                                    <!-- Credit Card -->
+                                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                                            class="fab fa-cc-amex"></i></a>
+
+                                    <!-- Master Card -->
+                                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                                            class="fab fa-cc-mastercard"></i></a>
+
+                                    <!-- Paypal -->
+                                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                                            class="fab fa-paypal"></i></a>
+                                </section>
+
+                                <a href="Politica1.html" class="btn btn-outline-dark"
+                                    style="background-color: white;"><b>Política de
+                                        Privacidad</b></a>
+                            </div>
+                            <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                    </div>
+                </section>
+                <!-- Section: Links  -->
+
+            </footer>
+        </div>
+
+    </div>
+
+
+    </div>
+</body>
+
+</html>

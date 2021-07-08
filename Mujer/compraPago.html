@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/caompraFin.css">
+  <script src="Js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/975123f3da.js" crossorigin="anonymous"></script>
+  <title>Compra Pago</title>
+</head>
+<body>
+
+<div class="row">
+<p id="pago"><b>Carrito--------------------Dirección--------------------Pago</b>--------------------Fin</p>
+
+</div>
+
+<div class="row">
+  <div class="col md-9 col-xs-12" id="formul">
+    <p id="metodo">Métodos de pago</p>
+
+    <div class="card w-100">
+      <div class="card-body">
+        <div class="form-group">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Pago con tarjeta</label> <br>
+          <label for="exampleFormControlInput1">NOMBRE TITULAR</label>
+          <input type="TEXT" class="form-control" id="exampleFormControlInput1" >
+          <label for="exampleFormControlInput1">NUMERO DE DOCUMENTO DE IDENTIDAD</label>
+          <input type="TEXT" class="form-control" id="exampleFormControlInput1">
+          <label for="exampleFormControlInput1">NUMERO DE TARJETA</label>
+          <input type="TEXT" class="form-control" id="exampleFormControlInput1">
+          <label for="exampleFormControlInput1">MES:</label> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="exampleFormControlInput1">AÑO:</label> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="exampleFormControlInput1">CVV:</label> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="card w-100">
+      <div class="card-body">
+        <select class="form-control form-control-sm">
+          <option>Otros medios de pago</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="card w-100">
+      <div class="card-body">
+        <div class="form-group">
+          <label for="exampleInputPassword1">Tipo de comprabante</label> <br>
+          
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">BOLETA</label> <br>
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">FACTURA</label>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card w-100">
+      <div class="card-body">
+        <div class="form-group">
+          <label for="exampleInputPassword1">Dirección</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" >
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="col md-3 col-xs-12" style="padding-left: 70px; padding-top: 35px;">
+    <div class="card  bg-light mb-3" style="max-width: 30rem;">
+      
+      <div class="card-body">
+        <div class="col-md-6" style=" padding-left: 50px;">
+          <h6>Resumen de la compra</h6>
+          <tr>
+              <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
+              <th scope="col">
+                  <p id="subtotal"></p>
+              </th>
+              <!-- <th scope="col"></th> -->
+          </tr>
+          <tr>
+              <th colspan="4" scope="col" class="text-right">IGV :</th>
+              <th scope="col">
+                  <p id="igv"></p>
+              </th>
+              <!-- <th scope="col"></th> -->
+          </tr>
+          <tr>
+              <th colspan="4" scope="col" class="text-right">TOTAL :</th>
+              <th scope="col">
+                  <p id="total"></p>
+              </th>
+              <!-- <th scope="col"></th> -->
+          </tr>
+          <div class="row justify-content-between">
+                  
+             
+                  <a href="compraFin.html" class="btn btn-success btn-block" id="procesar-compra">Generar orden</a>
+              
+          </div>
+      </div>
+    </div>
+    <div class="card  bg-light mb-3" style="max-width: 30rem;">
+      
+      <div class="card-body">
+        <h5 class="card-title">Detalle de la compra</h5>
+        <p class="card-text">Paquete 1
+          </p>
+          <p class="card-text">
+            Enviado desde Almacén: Fulfillment Ate, Calle
+            Hornos 109 Urb. Vulcano, ATE, LIMA, LIMA</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
